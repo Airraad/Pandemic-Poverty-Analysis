@@ -1,0 +1,57 @@
+,Data Dictionary - Column Information,,,,Column Name,Column Description,"Term, Acronym, or Code Definitions","Additional Notes 
+(where applicable, include the  range of possible values, units of measure, how to interpret null/zero values, whether there are specific relationships between columns, and information on column source)",Year Published,The year DCWP published the dataset.,,The NFH Inidicators will updated periodically as new U.S. Census and other contributing datasets become available.,PUMA,"Public Use Microdata Areas (PUMAs) are non-overlapping, statistical geographic areas that partition each state or equivalent entity into geographic areas containing no fewer than 100,000 people each",,,Borough,NYC Borough,,,Neighborhoods,Name of the Neighborhood Tabulation Area (NTA),,,CD,Community District(s) that comprise the PUMA,,,Join,A value included in the dataset for recursive processing for the map visulization - a self-join on the dataset by PUMA,,,NYC_Poverty_Rate,The poverty rate of the PUMA,,,Median_Income,The median income in the PUMA,,,Perc_White,The percent of the population in the PUMA that is white,,,Perc_Black,The percent of the population in the PUMA that is black,,,Perc_Asian,The percent of the population in the PUMA that is Asian,,,Perc_Other,The percent of the population in the PUMA that is of other race/ethnicity,,,Perc_Hispanic,The percent of the population in the PUMA that is Hispanic,,,Goal,The short name of the Financial Health goal.  ,"Build Assets; Financial Services; Financial Shocks; Goods & Services; Jobs & Income.
+
+""Overall Index"" ""Majority Race/Ethnicity"" values are also stored in this column but they are not considered goals.",,GoalName,The short name of the goal with presentation label,Goal 1: Financial Services; Goal 2: Goods & Services; Goal 3: Jobs & Income; Goal 4: Financial Shocks; Goal 5: Build Assets,,GoalFullName,The full name of the goal with presentation label,"Goal 1: Access to Affordable, High-Quality Financial Services; Goal 2: Access to Affordable, High-Quality Goods & Services; Goal 3: Access to Quality Jobs & Income Supports; Goal 4: Stable Housing & Capacity to Limit Financial Shocks; Goal 5: Opportunities to Build Assets & Plan for the Future; ",,TotalOutcome,Also referred to as the indicator score.  ,,,GoalRank,The PUMA's total outcome ranked against all NYC PUMAs for the specified goal.,,,IndexScore,The index score of the PUMA.,,Every neighborhood is assidnged an index score from 0 to 10 (10 being the best) for each neighborhood financial health goal based on indicators for how well the neighborhood fulfills the goal.,ScoreRank,The index score's rank among all PUMAs,,,Ind1,The name of the first indicator for each goal,"Homeownership Opportunity
+Bank / Credit Union-To-Nonbank Ratio
+Ability To Borrow At Low Cost
+Access To Groceries
+Job Training And Placement Support",,Ind1Outcome,"The outcome, or raw score, for the first indicator for each goal",,,Ind1Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind1Definition,Narrative definition of the first indicator for each goal,"Percentage of housing units that are owner-occupied
+Ratio of banks & credit unions to check cashers & pawnshops
+Percentage of residents with a prime or better credit score
+Supermarket square footage per 100 residents
+Number of job training and placement programs per 10,000 unemployed residents",,Ind2,The name of the second indicator for each goal,"Neighborhood Tenure
+Bank / Credit Union Density
+Housing Stability
+Child Care Capacity
+Jobs With Health Insurance",,Ind2Outcome,"The outcome, or raw score, for the second indicator for each goal",,,Ind2Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind2Definition,Narrative definition of the second indicator for each goal,"Percentage of residents who have lived in their homes for 10 or more years
+Number of bank and credit union branches per 10,000 residents
+Percentage of rental housing units that are under regulatory protection
+Percentage of 3- and 4-year-olds enrolled in early education programs
+Percentage of the population that has health insurance coverage through their current or former employer or through their union",,Ind3,The name of the third indicator for each goal,"IDNYC Acceptance
+Health Insurance Access
+Health Care Access
+Labor Force Participation",,Ind3Outcome,"The outcome, or raw score, for the third indicator for each goal",,,Ind3Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind3Definition,Narrative definition of the third indicator for each goal,"Number of NYC certified M/WBEs per 100,000 residents
+Percentage of bank & credit union branches that accept IDNYC as primary ID
+Percentage of residents with health insurance
+Percentage of adults who did not receive needed medical care in past year 
+Percent of the non-institutionalized people age 16 or older who are employed or looking for work",,Ind4,The name of the fourth indicator for each goal,"Retirement Security
+Mortgage Origination By Race
+Rent Burden
+Cost Of Transportation ($)
+Job Quality",,Ind4Outcome,"The outcome, or raw score, for the fourth indicator for each goal",,,Ind4Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind4Definition,Narrative definition of the fourth indicator for each goal,"Median income-to-poverty line ratio of residents age 65 and older
+Racial/ethnic mix of mortgage loans originated in the past year
+Percentage of households that pay more than 30% of income on rent
+Average (mean) amount of money spent monthly on transportation per household
+Median income of neighborhood residents with 5 or more years housing tenure",,Ind5,The name of the fifth indicator for each goal,"Community Efficacy
+Bank / Credit Union Utilization
+Severe Rent Burden
+Cost Of Transportation (%)
+Educational Attainment",,Ind5Outcome,"The outcome, or raw score, for the fifth indicator for each goal",,,Ind5Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind5Definition,Narrative definition of the fifth indicator for each goal,"Number of community and public institutions per 10,000 residents
+Percentage of residents with a bank or credit union account
+Percentage of households that pay more than 50% of income on rent
+Percentage of median household income spent on transportation
+Percentage of high school students who graduate on time (within 4 years)",,Ind6,The name of the sixth indicator for each goal,"Small Business Employment Opportunity
+Affordable Products
+Pre-foreclosure Notices
+Journey To Work Time
+Public Benefits Utilization",,Ind6Outcome,"The outcome, or raw score, for the sixth indicator for each goal",,,Ind6Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind6Definition,Narrative definition of the sixth indicator for each goal,"Percentage of jobs in small businesses (less than 20 employees)
+Percentage of bank & credit union branches offering checking accounts that meet New York Basic Banking guidelines
+Number of pre-foreclosure notices issued per 1,000 1-4 family homes and condominium units
+Average (mean) travel time to work in minutes
+Percentage of people eligible for SNAP receiving the benefit",,Ind7,The name of the seventh indicator for each goal,"Participatory Budgeting
+Mobile Banking Utilization
+Financial Counseling
+Tax Credit Utilization",,Ind7Outcome,"The outcome, or raw score, for the seventh indicator for each goal",,,Ind7Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind7Definition,Narrative definition of the seventh indicator for each goal,"Percentage of eligible residents casting a vote in most recent participatory budgeting cycle
+Estimated percentage of residents that used mobile banking in past twelve months
+Full-Time Equivalent Financial Counselors per 100,000 residents aged 18-64 years
+Percentage of eligible Tax Units claiming EITC",,Ind8,The name of the eighth indicator for each goal,Adults With High School Diploma,,Ind8Outcome,"The outcome, or raw score, for the eighth indicator for each goal",,,Ind8Rank,Where the PUMA's score for the goal's indicator ranks among all PUMAs for that indicator,,,Ind8Definition,Narrative definition of the eighth indicator for each goal,Percentage of adults with a high school degree or equivalent,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
