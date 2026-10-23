@@ -3,14 +3,26 @@ import numpy as np
 
 def importdata():
 #Imports the datasets and turns them into dataframes
-  return 2020df, 2018_2020df
+  df2020 = pd.read_csv()
+  df2018_2020 = pd.read_csv()
+  return df2020, df2018_2020
+df2020, df2018_2021 = importdata()
 
+def clean_data(df2020, df2018_2021):
+#Cleans the dataframes by removing unnecessary columns and renaming columns for merging
+  df2020 = df2020.drop(columns=['Borough', 'CD', 'Join', 'Perc_White', 'Perc_Hispanic', 'Perc_Black','Perc_Asian', 'GoalName', 'GoalFullName', 'GoalRank','ScoreRank'])
+  df2018_2021 = df2018_2021.drop(columns=['Borough', 'CD', 'Join', 'Perc_White', 'Perc_Hispanic', 'Perc_Black','Perc_Asian', 'GoalID', 'GoalName', 'GoalFullName', 'GoalRank','ScoreRank'])
+  return df2020, df2018_2021
 
-def splitdata(2018_2020df):
+def splitdata(df2018_2021):
  #Splits the 2018 & 2020 dataframe into two
-  return 2018df, 2021df
+  df2018 = df2018_2021[df2018_2021['Year'] == 2018]
+  df2021 = df2018_2021[df2018_2021['Year'] == 2021]
+  return df2018, df2021
 
-def merge_data(2020df, 2018df, 2021df):
+
+
+def merge_data(df2020, df2018, df2021):
   return merged_df
 #merges the datasets by PUMA (public use microdata areas)
 
@@ -32,6 +44,3 @@ def success(merged_df, imp_df):
 
   #Still not sure what output might look like.
   return success_df#???
-
-
-
