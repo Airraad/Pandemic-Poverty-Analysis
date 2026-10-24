@@ -1,6 +1,6 @@
 # Pandemic-Poverty-Analysis
 
-Comparing poverty rates and solutions from covid to modern day poverty rates in NYC.
+Comparing poverty rates and solutions from 2018 to 2020 and beyond in NYC.
 
 We used 2020 data from NYC Open Data at:
 **https://data.cityofnewyork.us/Business/Neighborhood-Financial-Health-Digital-Mapping-and-/r3dx-pew9/data_preview**
