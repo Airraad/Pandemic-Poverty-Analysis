@@ -1,10 +1,16 @@
 import pandas as pd
 import numpy as np
+from pathlib import Path
 
 def importdata():
 #Imports the datasets and turns them into dataframes
-  df2020 = pd.read_csv()
-  df2018_2020 = pd.read_csv()
+
+  current_dir = Path(__file__).parent
+  csv_path2020 = current_dir / "2020NeighborhoodData.csv"
+  csv_path2018_2020 = current_dir / "2018&2020NeighborhoodData.csv"
+
+  df2020 = pd.read_csv(csv_path2020)
+  df2018_2020 = pd.read_csv(2018_2020)
   return df2020, df2018_2020
 df2020, df2018_2021 = importdata()
 
@@ -12,19 +18,20 @@ def clean_data(df2020, df2018_2021):
 #Cleans the dataframes by removing unnecessary columns and renaming columns for merging
   df2020 = df2020.drop(columns=['Borough', 'CD', 'Join', 'Perc_White', 'Perc_Hispanic', 'Perc_Black','Perc_Asian', 'GoalName', 'GoalFullName', 'GoalRank','ScoreRank'])
   df2018_2021 = df2018_2021.drop(columns=['Borough', 'CD', 'Join', 'Perc_White', 'Perc_Hispanic', 'Perc_Black','Perc_Asian', 'GoalID', 'GoalName', 'GoalFullName', 'GoalRank','ScoreRank'])
+  #All left is year, puma, neighborhood, indicator, indicator name, score, and index score.
   return df2020, df2018_2021
+df2020, df2018_2021 = clean_data(df2020, df2018_2021)
 
 def splitdata(df2018_2021):
  #Splits the 2018 & 2020 dataframe into two
   df2018 = df2018_2021[df2018_2021['Year'] == 2018]
   df2021 = df2018_2021[df2018_2021['Year'] == 2021]
+   
+  
+  
   return df2018, df2021
 
 
-
-def merge_data(df2020, df2018, df2021):
-  return merged_df
-#merges the datasets by PUMA (public use microdata areas)
 
 def improved_data(merged_df):
 #checks for improvements of poverty rate and median salary, listing rate of change.
@@ -44,3 +51,12 @@ def success(merged_df, imp_df):
 
   #Still not sure what output might look like.
   return success_df#???
+
+
+
+splitdata(df2018_2021)
+
+print(f'{df2020.head()}')
+
+
+
