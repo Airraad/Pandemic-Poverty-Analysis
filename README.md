@@ -19,28 +19,19 @@ and 2018 & 2021 data from NYC Consumer and Worker Protection:
 
 **Question 1: Are neighborhoods improving?**
 
-  - To improve in our definition is to see lower poverty rates and higher median income...
+  - To improve in our definition is to see lower poverty rates and higher median income within the neighborhood.
   
 
-**Question 2: Which are changing the most?**
+**Question 2:What is their rate of change?**
 
-  - To change is...
+  - Their rate of change varies, some neighborhoods grow rapidly while others decline. This also means we can calculate projections like to 2025 and beyond. 
   
 
-**Question 3:What is their rate of change?**
+**Question 3: Have their goals been successful?**
 
-  - Their rate of change is ___ and this means that in 2025 it is projected to be _______, 
-  
+  - We want to measure our goals and to measure them we tracked which goals coincide with success. We have a score to indicate which goal was memorable with the neighborhood, we tracked it and it's change to within each neighborhood to see which goal was successful
 
-**Question 4: Have their goals been successful?**
-
-  - Success is...
-
-  - We want to revise...
-
-  - [goal] has been seen to be generally declining, so we want to change...
-  
   
 **Conclusion:**
 
-
+Check out the slides to see how it came out!
